@@ -7,7 +7,7 @@ var jogadas = 0;
 var grid = [0, 0, 0, 0, 0, 0, 0, 0, 0];
 function play(pos){
   var img = document.getElementById(pos);
-  img.src = "img/x.png";
+  img.src = "x.png";
   img.removeAttribute("onclick");
   jogadas++;
   grid[ pos - 1 ] = 1;
@@ -27,7 +27,7 @@ function playIa(){
   var img = document.getElementById(ia);
  
   if(img.onclick){
-    img.src = "img/circulo.png";
+    img.src = "circulo.png";
     img.removeAttribute("onclick");
     jogadas++;
     grid[ ia - 1] = -1;
